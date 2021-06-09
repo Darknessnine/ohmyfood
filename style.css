@@ -14,7 +14,7 @@ body{
 }
 
 .form__con{
-    background-color:#eaeaea;
+    background-color:#e6e6e6;
    width: 100%;
     
     
@@ -26,9 +26,35 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 10px 0px;
-    background-color:#eaeaea;
+    background-color:#e6e6e6;
     border-style: none;
     font-weight: bold;
+}
+.form__bar:focus{
+    outline: none;
+}
+
+.book-menu-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 45px;
+    margin-top: -18px;
+    
+}
+
+.book-menu__button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom right, rgb(235, 123, 229), rgb(179, 60, 179));
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+}
+
+.book-menu__button a {
+    color: white;
 }
 
 .info-con{}
@@ -37,6 +63,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 45px;
     
 }
 
@@ -95,18 +122,23 @@ footer{
 
 footer li{
     list-style: none;
+    margin: 5px 0px 0px 5px;
+    font-size: 14px;
+    
 
 }
 .footer__logo{
     width: 80px;
-    color: white;
-    margin: 15px 0px 10px 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 5px 0px 0px 0px
 }
 
 .footer__link  a{
     color: white;
     text-decoration: none;
-    margin: -210px 120px 0px -20px;
+    margin: -20px 0px 0px -20px;
+    
     
 }
 
