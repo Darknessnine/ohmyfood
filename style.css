@@ -57,7 +57,12 @@ body{
     color: white;
 }
 
-.info-con{}
+.info-con__header{
+    margin: 20px 0px 0px 15px;
+    padding: 10px 0px;
+    
+    
+}
 
 .info-card__con{
     display: flex;
@@ -93,6 +98,11 @@ body{
 .restaurants{
     background-color: rgb(243, 243, 243);
     padding: 1px;
+}
+
+.restaurants__header{
+    margin: 20px 0px -15px 20px;
+
 }
 .menu-card{
     background-color: white;
