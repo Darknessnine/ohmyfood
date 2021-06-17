@@ -51,12 +51,16 @@ body{
 .order-menu__card__header{
     margin-top: 5px;
 }
+.order-menu__header{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
 .order-menu-header{
     margin-left: 12px;
     padding-top: 10px;
     margin-bottom: 5px;
     font-size: 14.5px;
-
 }
 
 .order-menu__card__text{

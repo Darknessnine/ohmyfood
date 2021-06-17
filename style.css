@@ -76,8 +76,8 @@ body{
     background-color:#f0f0f0;
     padding: 5px;
     height: 45px;
-    width: 90%;
-    margin: 10px;
+    width: 88%;
+    margin: 10px 10px 10px 20px;
     border-radius: 17px;
 }
 
@@ -85,6 +85,15 @@ body{
     font-size:14px;
     font-weight: bold;
     margin: 15px 0px 0px 25%;
+}
+
+.info-card__number{
+    color: rgb(255, 255, 255);
+    margin: 12px 10px 10px -10px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+
 }
 
 .menu-con{
@@ -126,6 +135,17 @@ body{
     font-size: 14.5px;
 }
 
+.menu-card__new-tag{
+    display: block;
+    position: absolute;
+    padding: 5px 18px;
+    color: rgb(40, 110, 95);
+    background-color: rgb(142, 216, 212);
+    margin: 18px 0px 0px 253px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+}
 
 footer{
     padding: 5px 10px;
@@ -159,3 +179,46 @@ a{
     text-decoration: none;
 }
 
+.fa-circle{
+    color: rgb(140, 88, 182);
+    font-size: 22px;
+    position: absolute;
+    margin: 10px 10px 10px -17px;
+    z-index: 1;
+
+}
+
+.fa-map-marker-alt{
+    color: rgb(68, 68, 68);
+    position: absolute;
+    font-size: 12px;
+    margin: 12px 0px  0px 110px;
+
+}
+
+.fa-mobile-alt{
+    padding-right:20px;
+    margin-left: -20px;
+    color: grey;
+    font-size: 16px;
+}
+
+.fa-bars{
+    padding-right:20px;
+    color: grey;
+    font-size: 14px;
+    
+}
+.fa-ellipsis-v{
+    margin-left: -20px;
+    color: grey;
+    font-size: 14px;
+    
+}
+
+.fa-store{
+    color: rgb(140, 88, 182);
+    padding-right:20px;
+    margin-left: -20px;
+    font-size: 14px;
+}
