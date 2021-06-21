@@ -57,6 +57,10 @@ body{
     color: white;
 }
 
+.book-menu__desciption{
+   text-align: center;
+
+}
 .info-con__header{
     margin: 20px 0px 0px 15px;
     padding: 10px 0px;
@@ -221,4 +225,21 @@ a{
     padding-right:20px;
     margin-left: -20px;
     font-size: 14px;
+}
+
+.fa-heart{
+    font-weight:500;
+    color: grey;
+    margin: -44px 0px 0px 257px;
+    font-size: 23px;
+}
+
+
+.fa-utensils{
+    padding-right:10px ;
+}
+
+.fa-hands-helping{
+    padding-right:7px ;
+    font-size: 10px;
 }
