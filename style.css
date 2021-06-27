@@ -85,6 +85,10 @@ body{
     border-radius: 17px;
 }
 
+.info-card:hover{
+    background-color: rgb(231, 240, 240);
+}
+
 .info-card p {
     font-size:14px;
     font-weight: bold;

@@ -82,6 +82,19 @@ body{
     font-size: 13.5px;
 }
 
+.order-menu__card__price{
+margin: -30px 0px 0px 299px; 
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.order-menu__card__price-en{
+    margin: -30px 0px 0px 299px; 
+       font-size: 13px;
+       font-weight: bold;
+       position: absolute;
+}
+
 .order-button-con{
     background-color: rgb(243, 243, 243);
     padding:29px 0px 60px 0px;
@@ -155,3 +168,6 @@ a{
     font-size: 10px;
 }
 
+.order-menu-card--shadow{
+    box-shadow: 1px 3px 5px rgb(202, 201, 201);
+}
