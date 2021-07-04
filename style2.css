@@ -56,7 +56,7 @@ body{
     margin: 10px;
     position: relative;
     overflow: hidden;
-    animation: loadin 1222ms ease-in-out;
+    animation: loadin 850ms ease-in-out;
 }
 
 
@@ -64,9 +64,15 @@ body{
 @keyframes loadin{
 
     0%{
-        transform: translateY(20px);
+        transform: translateY(5px);
         opacity: 0;
     }
+
+    15%{
+        transform: translateY(5px);
+
+    }
+
     100%{
         transform: translateY(0px);
         opacity: 1;
@@ -109,10 +115,11 @@ body{
 }
 
 .order-menu__card__price-en{
-    margin: -30px 0px 0px 299px; 
+       margin: -30px 0px 0px 299px; 
        font-size: 13px;
        font-weight: bold;
        position: absolute;
+       transition: transform ease-in-out 500ms;
 }
 
 .order-menu__card__slide{
@@ -151,6 +158,12 @@ body{
     
 }
 
+.order-menu__card:hover .order-menu__card__price-en{
+    transform:translateX(-50px)
+    
+}
+
+
 .order-button-con{
     background-color: rgb(243, 243, 243);
     padding:29px 0px 60px 0px;
@@ -164,6 +177,10 @@ body{
     border-style: none;
     color: white;
     font-weight:670;
+}
+
+.order__button--shadow{
+    box-shadow: 1px 3px 5px rgb(202, 201, 201);
 }
 
 .center{
@@ -226,4 +243,28 @@ a{
 
 .order-menu-card--shadow{
     box-shadow: 1px 3px 5px rgb(202, 201, 201);
+}
+
+
+.fa-heart-o:hover{
+    animation: forwards  heartfill 750ms ease-in;
+
+}
+
+@keyframes heartfill{
+    0% {
+        color: gray;
+        font-weight: 100;
+       
+
+    }
+
+    100%{
+        color: red;
+        font-weight: 900;
+        font-size: 23.5px;
+
+    }
+
+
 }

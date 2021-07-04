@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0px;
     padding: 0x;
@@ -15,9 +17,7 @@ body{
 
 .form__con{
     background-color:#e6e6e6;
-   width: 100%;
-    
-    
+    width: 100%;
 }
 
 .form__bar{
@@ -104,6 +104,10 @@ body{
 
 }
 
+.info-card--shadow{
+    box-shadow: 1px 3px 5px rgb(202, 201, 201);
+}
+
 .menu-con{
     display: flex;
     flex-direction: column;
@@ -155,6 +159,10 @@ body{
     font-weight: bold;
 }
 
+.menu-card--shadow{
+    box-shadow: 1px 3px 5px rgb(202, 201, 201);
+}
+
 footer{
     padding: 5px 10px;
     background-color: #353535;
@@ -178,8 +186,6 @@ footer li{
     color: white;
     text-decoration: none;
     margin: -20px 0px 0px -20px;
-    
-    
 }
 
 a{
@@ -238,6 +244,23 @@ a{
     font-size: 20px;
 }
 
+.fa-heart-o:hover{
+    animation: forwards  heartfill 750ms ease-in;
+
+}
+
+@keyframes heartfill{
+    0% {
+        color: gray;
+        font-weight: 100;
+    }
+
+    100%{
+        color: red;
+        font-weight: 900;
+        font-size: 21.5px;
+    }
+}
 
 .fa-utensils{
     padding-right:10px ;
