@@ -106,7 +106,8 @@ body{
 }
 
 .order-menu__card__price{
-   margin: -53px 0px 0px 275px; 
+   margin: -53px 0px 0px 275px;
+   margin-left: 80%; 
    background-color: rgb(255, 255, 266);
    padding: 20px;
    font-size: 13px;
@@ -115,22 +116,23 @@ body{
 }
 
 .order-menu__card__price-en{
-       margin: -30px 0px 0px 299px; 
-       font-size: 13px;
-       font-weight: bold;
-       position: absolute;
-       transition: transform ease-in-out 500ms;
+    margin: -30px 0px 0px 299px; 
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    transition: transform ease-in-out 500ms;
 }
 
+
 .order-menu__card__slide{
-        position: absolute;
-        background-color: rgb(76, 192, 167);
-        height: 100%;
-        width: 60px;
-        right:0;
-        top:0;
-        transform:translateX(60px); 
-        transition: transform  600ms;
+    position: absolute;
+    background-color: rgb(76, 192, 167);
+    height: 100%;
+    width: 60px;
+    right:0;
+    top:0;
+    transform:translateX(60px); 
+    transition: transform  600ms;
 }
 
 .fa-check-circle{
