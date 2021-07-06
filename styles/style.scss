@@ -1,4 +1,4 @@
-
+@import "variables";
 
 body{
     margin: 0px;
@@ -32,7 +32,7 @@ body{
     animation: spin-loadin 1500ms ease;
     opacity: 0;
     z-index: 10;
-    color: #353535;
+    color: $tertiary;
 }
 
 @keyframes spin-loadin {
@@ -86,7 +86,7 @@ body{
 .book-menu__button{
     margin-top: 20px;
     padding: 10px 20px;
-    background-image: linear-gradient(to bottom right, rgb(235, 123, 229), rgb(179, 60, 179));
+    background-image: linear-gradient(to bottom right, $secondary, $primary);
     border-radius: 20px;
     border-style: none;
     color: white;
@@ -190,8 +190,8 @@ body{
     display: block;
     position: absolute;
     padding: 5px 18px;
-    color: rgb(40, 110, 95);
-    background-color: rgb(142, 216, 212);
+    color: $new-tag-text;
+    background-color: $tertiary;
     margin: 18px 0px 0px 253px;
     border-radius: 2px;
     font-size: 11px;
@@ -204,7 +204,7 @@ body{
 
 footer{
     padding: 5px 10px;
-    background-color: #353535;
+    background-color: $footer-bg;
 }
 
 footer li{
@@ -233,7 +233,7 @@ a{
 }
 
 .fa-circle{
-    color: rgb(140, 88, 182);
+    color: $primary;
     font-size: 22px;
     position: absolute;
     margin: 10px 10px 10px -17px;
@@ -290,12 +290,12 @@ a{
 
 @keyframes heartfill{
     0% {
-        color: gray;
+        color: $primary;
         font-weight: 100;
     }
 
     100%{
-        color: red;
+        color: $secondary;
         font-weight: 900;
         font-size: 21.5px;
     }

@@ -1,0 +1,309 @@
+body {
+  margin: 0px;
+  padding: 0x;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 15px 0px;
+}
+
+.bastille-hero__img {
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+.enchanted-hero__img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: -70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.order-menu-con {
+  background-color: #f3f3f3;
+}
+
+.order-menu-con-header {
+  background-color: #f3f3f3;
+  border-radius: 35px 35px 0px 0px;
+  padding: 7px 0px;
+  margin-bottom: -18px;
+  position: relative;
+}
+
+.order-menu-card-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.order-menu__card {
+  background-color: white;
+  padding: 5px 10px;
+  height: 50px;
+  width: 88%;
+  border-radius: 15px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: loadin 850ms ease-in-out;
+          animation: loadin 850ms ease-in-out;
+}
+
+@-webkit-keyframes loadin {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes loadin {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.order-menu__card__header {
+  margin-top: 5px;
+}
+
+.order-menu__header {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.order-menu-header--line {
+  height: 3px;
+  width: 30px;
+  margin: -1px 0px 0px 13px;
+  background-color: #99E2D0;
+}
+
+.order-menu-header {
+  margin-left: 12px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14.5px;
+}
+
+.order-menu__card__text {
+  margin-top: -17px;
+  font-size: 12.5px;
+}
+
+.order-menu__card__price {
+  margin: -53px 0px 0px 275px;
+  margin-left: 80%;
+  background-color: white;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform ease-in-out 500ms;
+  transition: -webkit-transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
+}
+
+.order-menu__card__price-en {
+  margin: -30px 0px 0px 299px;
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  -webkit-transition: -webkit-transform ease-in-out 500ms;
+  transition: -webkit-transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms;
+  transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
+}
+
+.order-menu__card__slide {
+  position: absolute;
+  background-color: #4cc0a7;
+  height: 100%;
+  width: 60px;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  -webkit-transition: -webkit-transform  600ms;
+  transition: -webkit-transform  600ms;
+  transition: transform  600ms;
+  transition: transform  600ms, -webkit-transform  600ms;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 25px;
+  -webkit-transition: -webkit-transform  ease-in-out 500ms;
+  transition: -webkit-transform  ease-in-out 500ms;
+  transition: transform  ease-in-out 500ms;
+  transition: transform  ease-in-out 500ms, -webkit-transform  ease-in-out 500ms;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  margin: 17px 0px 0px 15px;
+}
+
+.order-menu__card:hover .order-menu__card__slide {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.order-menu__card:hover .fa-check-circle {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.order-menu__card:hover .order-menu__card__price {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.order-menu__card:hover .order-menu__card__price-en {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.order-button-con {
+  background-color: #f3f3f3;
+  padding: 29px 0px 60px 0px;
+}
+
+.order__button {
+  padding: 12px 55px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+  font-weight: 670;
+}
+
+.order__button--shadow {
+  -webkit-box-shadow: 1px 3px 5px #cac9c9;
+          box-shadow: 1px 3px 5px #cac9c9;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+footer {
+  padding: 5px 10px;
+  background-color: #353535;
+}
+
+footer li {
+  list-style: none;
+  margin: 5px 0px 0px 5px;
+  font-size: 14px;
+}
+
+.footer__logo {
+  width: 80px;
+  margin-top: 10px;
+  margin-left: 25px;
+  padding: 5px 0px 0px 0px;
+}
+
+.footer__link a {
+  color: white;
+  text-decoration: none;
+  margin: -20px 0px 0px -20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.fa-arrow-left {
+  color: #242424;
+  position: absolute;
+  margin: 20px 0px 0px 25px;
+}
+
+.fa-heart-o {
+  font-weight: 100;
+  font-size: 22px;
+  color: #acacac;
+  margin: -45px 0px 0px 320px;
+}
+
+.fa-utensils {
+  padding-right: 10px;
+}
+
+.fa-hands-helping {
+  padding-right: 7px;
+  font-size: 10px;
+}
+
+.order-menu-card--shadow {
+  -webkit-box-shadow: 1px 3px 5px #cac9c9;
+          box-shadow: 1px 3px 5px #cac9c9;
+}
+
+.fa-heart-o:hover {
+  -webkit-animation: forwards  heartfill 750ms ease-in;
+          animation: forwards  heartfill 750ms ease-in;
+}
+
+@-webkit-keyframes heartfill {
+  0% {
+    color: #9356DC;
+    font-weight: 100;
+  }
+  100% {
+    color: #FF79DA;
+    font-weight: 900;
+    font-size: 23.5px;
+  }
+}
+
+@keyframes heartfill {
+  0% {
+    color: #9356DC;
+    font-weight: 100;
+  }
+  100% {
+    color: #FF79DA;
+    font-weight: 900;
+    font-size: 23.5px;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
