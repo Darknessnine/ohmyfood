@@ -9,8 +9,9 @@ body {
           animation: main-loadin  1600ms;
   background-color: white;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
   z-index: 3;
   -webkit-transform: translateX(1000px);
           transform: translateX(1000px);
@@ -21,6 +22,8 @@ body {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     opacity: 1;
+    width: 100%;
+    height: 100%;
   }
   75% {
     opacity: .3;
@@ -28,11 +31,15 @@ body {
   99% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+    width: 100%;
+    height: 100%;
   }
   100% {
     -webkit-transform: translateX(1000px);
             transform: translateX(1000px);
     opacity: 0;
+    width: 0%;
+    height: 0%;
   }
 }
 
@@ -41,6 +48,8 @@ body {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     opacity: 1;
+    width: 100%;
+    height: 100%;
   }
   75% {
     opacity: .3;
@@ -48,11 +57,15 @@ body {
   99% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+    width: 100%;
+    height: 100%;
   }
   100% {
     -webkit-transform: translateX(1000px);
             transform: translateX(1000px);
     opacity: 0;
+    width: 0%;
+    height: 0%;
   }
 }
 
@@ -117,13 +130,14 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 135px;
   padding: 15px 0px;
 }
 
 .form__con {
   background-color: #e6e6e6;
   width: 100%;
+  position: relative;
 }
 
 .form__bar {
@@ -165,6 +179,16 @@ body {
   border-radius: 20px;
   border-style: none;
   color: white;
+}
+
+.book-menu__button--shadow {
+  -webkit-box-shadow: 1px 3px 5px #a5a0a0;
+          box-shadow: 1px 3px 5px #a5a0a0;
+}
+
+.book-menu__button:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fcb4e7), to(#a86df1));
+  background-image: linear-gradient(to bottom right, #fcb4e7, #a86df1);
 }
 
 .book-menu__button a {
@@ -250,9 +274,10 @@ body {
 .menu-card {
   background-color: white;
   height: 220px;
-  width: 97%;
+  width: 98%;
   border-radius: 10px;
   margin: 10px 0px 10px 0px;
+  position: relative;
 }
 
 .menu-card__img {
@@ -270,12 +295,11 @@ body {
 }
 
 .menu-card__new-tag {
-  display: block;
   position: absolute;
   padding: 5px 18px;
   color: #076b5a;
   background-color: #99E2D0;
-  margin: 18px 0px 0px 253px;
+  margin: 18px 0px 0px 80%;
   border-radius: 2px;
   font-size: 11px;
   font-weight: bold;
@@ -327,7 +351,7 @@ a {
   color: #444444;
   position: absolute;
   font-size: 12px;
-  margin: 12px 0px  0px 110px;
+  margin: 12px 0px  0px 31%;
 }
 
 .fa-mobile-alt {
@@ -335,6 +359,7 @@ a {
   margin-left: -20px;
   color: grey;
   font-size: 16px;
+  position: absolute;
 }
 
 .fa-bars {
@@ -359,7 +384,7 @@ a {
 .fa-heart-o {
   font-weight: 500;
   color: grey;
-  margin: -44px 0px 0px 257px;
+  margin: -44px 0px 0px 88%;
   font-size: 20px;
 }
 
@@ -399,5 +424,61 @@ a {
 .fa-hands-helping {
   padding-right: 7px;
   font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+  .info-card {
+    width: 95%;
+  }
+  .info-card p {
+    margin-left: 43%;
+  }
+  .menu-card__new-tag {
+    padding: 7px 20px;
+    margin-left: 80%;
+    font-size: 14px;
+  }
+  .fa-heart-o {
+    margin: -44px 0px 0px 90%;
+  }
+  .fa-map-marker-alt {
+    margin: 16px 0px  0px 40%;
+  }
+  .form__bar {
+    padding: 15px 0px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .info-card {
+    width: 97%;
+  }
+  .info-card p {
+    margin-left: 47%;
+  }
+  .menu-con {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .menu-card {
+    height: 300px;
+    width: 98%;
+  }
+  .fa-heart-o {
+    margin: -44px 0px 0px 90%;
+  }
+  .menu-card__new-tag {
+    padding: 7px 20px;
+    margin-left: 83%;
+    font-size: 14px;
+  }
+  .fa-map-marker-alt {
+    margin: 16px 0px  0px 45%;
+  }
+  .form__bar {
+    padding: 15px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

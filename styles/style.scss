@@ -10,17 +10,18 @@ body{
      animation: main-loadin  1600ms;
      background-color: rgb(255, 255, 255);
      position: absolute;
-     width: 100%;
-     height: 100%;
+     width: 0%;
+     height: 0%;
+     opacity: 0;
      z-index: 3;
      transform:translateX(1000px);
      }
 
 @keyframes main-loadin{
-    0%{transform: translateX(0px); opacity: 1; }
+    0%{transform: translateX(0px); opacity: 1; width: 100%; height: 100%; }
     75%{opacity:.3;}
-    99%{transform: translateX(0px);}
-    100%{transform: translateX(1000px); opacity: 0;}
+    99%{transform: translateX(0px); width: 100%; height: 100%;}
+    100%{transform: translateX(1000px); opacity: 0; width: 0%; height: 0%;}
 }
 
 .fa-circle-notch{
@@ -49,7 +50,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 135px;
     padding: 15px 0px;
 
 }
@@ -57,6 +58,7 @@ body{
 .form__con{
     background-color:#e6e6e6;
     width: 100%;
+    position: relative;
 }
 
 .form__bar{
@@ -90,6 +92,14 @@ body{
     border-radius: 20px;
     border-style: none;
     color: white;
+}
+
+.book-menu__button--shadow{
+    box-shadow: 1px 3px 5px rgb(165, 160, 160);
+}
+
+.book-menu__button:hover{
+    background-image: linear-gradient(to bottom right, $button-secon-light, $button-prim-light);
 }
 
 .book-menu__button a {
@@ -167,9 +177,10 @@ body{
 .menu-card{
     background-color: white;
     height: 220px;
-    width: 97%;
+    width: 98%;
     border-radius: 10px;
     margin: 10px 0px 10px 0px;
+    position: relative;
     
 }
 
@@ -187,12 +198,11 @@ body{
 }
 
 .menu-card__new-tag{
-    display: block;
     position: absolute;
     padding: 5px 18px;
     color: $new-tag-text;
     background-color: $tertiary;
-    margin: 18px 0px 0px 253px;
+    margin: 18px 0px 0px 80%;
     border-radius: 2px;
     font-size: 11px;
     font-weight: bold;
@@ -245,7 +255,7 @@ a{
     color: rgb(68, 68, 68);
     position: absolute;
     font-size: 12px;
-    margin: 12px 0px  0px 110px;
+    margin: 12px 0px  0px 31%;
 
 }
 
@@ -254,6 +264,7 @@ a{
     margin-left: -20px;
     color: grey;
     font-size: 16px;
+    position:absolute;
 }
 
 .fa-bars{
@@ -279,7 +290,7 @@ a{
 .fa-heart-o{
     font-weight:500;
     color: grey;
-    margin: -44px 0px 0px 257px;
+    margin: -44px 0px 0px 88%;
     font-size: 20px;
 }
 
@@ -308,4 +319,86 @@ a{
 .fa-hands-helping{
     padding-right:7px ;
     font-size: 10px;
+}
+
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 1224px){
+
+.info-card{
+    width: 95%;
+}
+
+.info-card p {
+    margin-left: 43%;
+}
+
+.menu-card__new-tag{
+    padding: 7px 20px;
+    margin-left: 80%;
+    font-size: 14px;
+}
+
+.fa-heart-o{
+    margin: -44px 0px 0px 90%;
+}
+
+.fa-map-marker-alt{
+    margin: 16px 0px  0px 40%;
+
+}
+.form__bar{
+    padding: 15px 0px;
+
+}
+
+
+
+
+
+}
+
+// Desktop
+@media (min-width:1225px){
+    
+    .info-card{
+        width: 97%;
+    }
+
+    .info-card p {
+        margin-left: 47%;
+    }
+
+    .menu-con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }   
+
+    .menu-card{
+        height: 300px;
+        width: 98%;
+    }
+
+    .fa-heart-o{
+        margin: -44px 0px 0px 90%;
+
+    }
+    
+    .menu-card__new-tag{
+        padding: 7px 20px;
+        margin-left: 83%;
+        font-size: 14px;
+    }
+
+    .fa-map-marker-alt{
+        margin: 16px 0px  0px 45%;
+    
+    }
+    
+    .form__bar{
+        padding: 15px 0px;
+
+    }
+
+    
 }
