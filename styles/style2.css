@@ -262,10 +262,11 @@ a {
 }
 
 .fa-heart-o {
+  position: absolute;
   font-weight: 100;
   font-size: 22px;
   color: #acacac;
-  margin: -45px 0px 0px 320px;
+  margin: -40px 0px 0px 320px;
 }
 
 .fa-utensils {
@@ -312,9 +313,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1224px) {
-  .order-menu__card {
-    width: 94%;
-  }
   .fa-heart-o {
     margin-left: 350px;
   }

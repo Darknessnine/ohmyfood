@@ -168,7 +168,6 @@ body {
           align-items: center;
   background-color: #f1f1f1;
   padding-bottom: 45px;
-  margin-top: -18px;
 }
 
 .book-menu__button {
@@ -382,9 +381,10 @@ a {
 }
 
 .fa-heart-o {
-  font-weight: 501;
+  font-weight: 500;
+  position: absolute;
   color: grey;
-  margin: -44px 0px 0px 88%;
+  margin: -35px 0px 0px 82%;
   font-size: 20px;
 }
 
@@ -439,7 +439,7 @@ a {
     font-size: 14px;
   }
   .fa-heart-o {
-    margin: -44px 0px 0px 90%;
+    margin: -35px 0px 0px 90%;
   }
   .fa-map-marker-alt {
     margin: 16px 0px  0px 40%;
@@ -467,7 +467,7 @@ a {
     width: 98%;
   }
   .fa-heart-o {
-    margin: -44px 0px 0px 90%;
+    margin: -35px 0px 0px 90%;
   }
   .menu-card__new-tag {
     padding: 7px 20px;

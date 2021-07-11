@@ -81,7 +81,6 @@ body{
     align-items: center;
     background-color: rgb(241, 241, 241);
     padding-bottom: 45px;
-    margin-top: -18px;
     
 }
 
@@ -289,8 +288,9 @@ a{
 
 .fa-heart-o{
     font-weight:500;
+    position:absolute;
     color: grey;
-    margin: -44px 0px 0px 88%;
+    margin: -35px 0px 0px 82%;
     font-size: 20px;
 }
 
@@ -339,7 +339,7 @@ a{
 }
 
 .fa-heart-o{
-    margin: -44px 0px 0px 90%;
+    margin: -35px 0px 0px 90%;
 }
 
 .fa-map-marker-alt{
@@ -380,7 +380,7 @@ a{
     }
 
     .fa-heart-o{
-        margin: -44px 0px 0px 90%;
+        margin: -35px 0px 0px 90%;
 
     }
     
